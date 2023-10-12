@@ -4,10 +4,10 @@
 
 @layer base {
   body {
-    @apply font-poppins;
+    @apply font-roboto;
   }
   h1 {
-    @apply text-[60px] font-bold leading-[90px] text-black sm:text-3xl md:text-4xl md:leading-normal lg:text-5xl;
+    @apply text-[60px] font-bold leading-[90px] text-black lg:text-5xl md:text-4xl md:leading-normal sm:text-3xl;
   }
 }
 
@@ -21,6 +21,6 @@
   }
 
   .description {
-    @apply text-secondary text-base font-normal leading-6 tracking-[-0.002em];
+    @apply text-base font-normal leading-6 tracking-[-0.002em] text-secondary;
   }
 }

@@ -9,8 +9,7 @@ export default {
       xs: { max: "479px" },
     },
     fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
-      montserrat: ["Montserrat", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
     extend: {
       colors: {
@@ -18,8 +17,7 @@ export default {
         secondary: "#666768",
       },
       backgroundImage: {
-        heroGradient:
-          "linear-gradient(94.59deg, #4923B4 2.39%, #E878CF 97.66%)",
+        heroGradient: "linear-gradient(94.59deg, #4923B4 2.39%, #E878CF 97.66%)",
         logo: "url('/images/logo.svg')",
       },
       keyframes: {

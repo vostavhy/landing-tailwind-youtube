@@ -1,4 +1,4 @@
 // vite.config.js
 export default {
-  base: "/project-name/",
+  base: "/landing-tailwind-youtube/",
 };
