@@ -8,17 +8,15 @@ export default {
       sm: { max: "767px" },
       xs: { max: "479px" },
     },
-    fontFamily: {
-      roboto: ["Roboto", "sans-serif"],
-    },
     extend: {
-      colors: {
-        primary: "#5027B5",
-        secondary: "#666768",
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
       },
-      backgroundImage: {
-        heroGradient: "linear-gradient(94.59deg, #4923B4 2.39%, #E878CF 97.66%)",
-        logo: "url('/images/logo.svg')",
+      colors: {
+        primary: "#0F0F0F",
+        secondary: "#606060",
+        "light-blue": "#065FD4",
+        "dark-red": "#CC0000",
       },
       keyframes: {
         "fade-in": {

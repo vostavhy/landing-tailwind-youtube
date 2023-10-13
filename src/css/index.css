@@ -6,21 +6,10 @@
   body {
     @apply font-roboto;
   }
-  h1 {
-    @apply text-[60px] font-bold leading-[90px] text-black lg:text-5xl md:text-4xl md:leading-normal sm:text-3xl;
-  }
 }
 
 @layer components {
-  .menu-item {
-    @apply relative text-[15px] font-medium leading-[22px] text-white after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-white after:opacity-100 after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-100 hover:after:opacity-100;
-  }
-
-  .tab.active {
-    @apply border-b-[2px] border-[#5027B5] pb-[10px] text-[#5027B5];
-  }
-
-  .description {
-    @apply text-base font-normal leading-6 tracking-[-0.002em] text-secondary;
+  .container {
+    @apply mx-auto max-w-[1680px] px-6;
   }
 }
