@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="images/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="icons/vite.svg" />
     <link type="text/css" href="src/css/index.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,8 +11,89 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="container">
-      <h1 class="text-dark-red/90">Hello world!</h1>
+    <div class="flex">
+      <aside class="w-[240px]">
+        <!-- logo -->
+        <div class="flex items-center pl-4">
+          <button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5">
+            <img src="icons/nav.svg" alt="navigation" />
+          </button>
+          <a href="#" class="flex items-center justify-center">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <!-- nav 1 -->
+        <nav class="border-b border-black/10 p-3 pr-6">
+          <ul>
+            <li>
+              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+                <img src="icons/aside/home.svg" alt="home" />
+                <span class="text-sm font-medium leading-5 text-primary group-hover:font-bold">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+                <img src="icons/aside/shorts.svg" alt="home" />
+                <span class="text-sm font-medium leading-5 text-primary group-hover:font-bold">Shorts</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+                <img src="icons/aside/subscriptions.svg" alt="home" />
+                <span class="text-sm font-medium leading-5 text-primary group-hover:font-bold">Subscriptions</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- nav 2 -->
+        <nav class="border-b border-black/10 p-3 pr-6">
+          <ul>
+            <li>
+              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+                <img src="icons/aside/library.svg" alt="Library" />
+                <span class="text-sm font-medium leading-5 text-primary group-hover:font-bold">Library</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+                <img src="icons/aside/history.svg" alt="History" />
+                <span class="text-sm font-medium leading-5 text-primary group-hover:font-bold">History</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex flex-col gap-3 border-b border-black/10 px-8 py-4">
+          <span class="pr-[18px] text-sm text-primary">Sign in to like videos, comment, and subscribe.</span>
+          <button
+            class="flex w-max items-center gap-[6px] rounded-[18px] border border-black/10 py-[6px] pl-[10px] pr-4 transition hover:bg-black/5"
+          >
+            <img src="icons/aside/login.svg" alt="login" class="" />
+            <span class="font-medium text-light-blue">Sign in</span>
+          </button>
+        </div>
+
+        <!-- nav 2 -->
+        <nav class="border-b border-black/10 p-3 pr-6">
+          <ul>
+            <li>
+              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+                <img src="icons/aside/library.svg" alt="Library" />
+                <span class="text-sm font-medium leading-5 text-primary group-hover:font-bold">Library</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+                <img src="icons/aside/history.svg" alt="History" />
+                <span class="text-sm font-medium leading-5 text-primary group-hover:font-bold">History</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main></main>
     </div>
     <script type="module" src="src/js/main.js"></script>
   </body>
