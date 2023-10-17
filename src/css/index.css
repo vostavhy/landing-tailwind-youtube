@@ -14,6 +14,10 @@
   aside.active {
     @apply w-[72px];
   }
+
+  nav.active:first-child {
+    @apply pt-1;
+  }
 }
 
 @layer components {
@@ -33,9 +37,5 @@
 
   .nav-container.active {
     @apply border-none px-1 py-0;
-  }
-
-  .nav-container.active.first {
-    @apply pt-1;
   }
 }
