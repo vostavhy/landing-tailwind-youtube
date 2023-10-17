@@ -1,4 +1,20 @@
 console.log("JS connected");
 
-const app = document.getElementById("app");
-app.innerHTML = "<h1>Hello World!</h1>";
+const toggleNav = () => {
+  const burger = document.querySelector("#burger");
+  const hiddenNav = document.querySelectorAll(".nav-hidden");
+
+  const sidebar = document.querySelector("aside");
+
+  const navContainer = document.querySelectorAll(".nav-container");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  burger.addEventListener("click", () => {
+    hiddenNav.forEach((nav) => nav.classList.toggle("hidden"));
+    sidebar.classList.toggle("active");
+    navContainer.forEach((nav) => nav.classList.toggle("active"));
+    navLinks.forEach((link) => link.classList.toggle("active"));
+  });
+};
+
+toggleNav();

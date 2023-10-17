@@ -6,10 +6,32 @@
   body {
     @apply font-roboto;
   }
+
+  aside {
+    @apply w-[240px];
+  }
+
+  aside.active {
+    @apply w-[72px];
+  }
 }
 
 @layer components {
   .container {
     @apply mx-auto max-w-[1680px] px-6;
+  }
+}
+
+@layer utilities {
+  .nav-link.active {
+    @apply flex-col gap-0 px-0;
+  }
+
+  .nav-link.active span {
+    @apply text-[10px] leading-[14px];
+  }
+
+  .nav-container.active {
+    @apply border-none px-1 py-0;
   }
 }

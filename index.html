@@ -11,35 +11,38 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="flex">
-      <aside class="w-[240px]">
-        <!-- logo -->
-        <div class="flex items-center pl-4">
-          <button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5">
-            <img src="icons/nav.svg" alt="navigation" />
-          </button>
-          <a href="#" class="flex items-center justify-center">
-            <img src="images/logo.png" alt="logo" />
-          </a>
-        </div>
+    <header>
+      <!-- logo -->
+      <div class="flex items-center pl-4">
+        <button id="burger" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5">
+          <img src="icons/nav.svg" alt="navigation" />
+        </button>
+        <a href="#" class="flex items-center justify-center">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+      </div>
+    </header>
 
+    <main class="flex">
+      <!-- aside -->
+      <aside>
         <!-- nav 1 -->
-        <nav class="border-b border-black/10 p-3 pr-6">
+        <nav class="nav-container border-b border-black/10 pb-3 pl-3 pr-6">
           <ul>
             <li>
-              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+              <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
                 <img src="icons/aside/home.svg" alt="home" />
                 <span class="text-sm text-primary group-hover:font-medium">Home</span>
               </a>
             </li>
             <li>
-              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+              <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
                 <img src="icons/aside/shorts.svg" alt="home" />
                 <span class="text-sm text-primary group-hover:font-medium">Shorts</span>
               </a>
             </li>
             <li>
-              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+              <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
                 <img src="icons/aside/subscriptions.svg" alt="home" />
                 <span class="text-sm text-primary group-hover:font-medium">Subscriptions</span>
               </a>
@@ -48,16 +51,16 @@
         </nav>
 
         <!-- nav 2 -->
-        <nav class="border-b border-black/10 p-3 pr-6">
+        <nav class="nav-container border-b border-black/10 p-3 pr-6">
           <ul>
             <li>
-              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+              <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
                 <img src="icons/aside/library.svg" alt="Library" />
                 <span class="text-sm text-primary group-hover:font-medium">Library</span>
               </a>
             </li>
             <li>
-              <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
+              <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
                 <img src="icons/aside/history.svg" alt="History" />
                 <span class="text-sm text-primary group-hover:font-medium">History</span>
               </a>
@@ -66,7 +69,7 @@
         </nav>
 
         <!-- login -->
-        <div class="flex flex-col gap-3 border-b border-black/10 px-8 py-4">
+        <div class="nav-hidden flex flex-col gap-3 border-b border-black/10 px-8 py-4">
           <span class="pr-[18px] text-sm text-primary">Sign in to like videos, comment, and subscribe.</span>
           <button
             class="flex w-max items-center gap-[6px] rounded-[18px] border border-black/10 py-[6px] pl-[10px] pr-4 transition hover:bg-black/5"
@@ -77,7 +80,7 @@
         </div>
 
         <!-- nav 3 -->
-        <nav class="border-b border-black/10 p-3 pr-6">
+        <nav class="nav-hidden border-b border-black/10 p-3 pr-6">
           <ul>
             <li>
               <span class="pb-1 pl-3 pt-[6px] text-base leading-[22px]">Explore</span>
@@ -152,7 +155,7 @@
         </nav>
 
         <!-- channels -->
-        <div class="border-b border-b-black/10 py-3 pl-3 pr-6">
+        <div class="nav-hidden border-b border-b-black/10 py-3 pl-3 pr-6">
           <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
             <img src="icons/aside/plus.svg" alt="Shopping" />
             <span class="text-sm text-primary group-hover:font-medium">Browse channels</span>
@@ -160,7 +163,7 @@
         </div>
 
         <!-- more from youtube -->
-        <div class="py-3 pl-3 pr-6">
+        <div class="nav-hidden py-3 pl-3 pr-6">
           <p class="pb-1 pl-3 pt-[6px] text-base leading-[22px]">More from YouTube</p>
           <a href="#" class="group flex items-center gap-6 rounded-[10px] px-3 py-2 hover:bg-black/5">
             <img src="icons/aside/youtube.svg" alt="Youtube" />
@@ -168,8 +171,10 @@
           </a>
         </div>
       </aside>
-      <main></main>
-    </div>
+
+      <!-- content -->
+      <section>CONTENT</section>
+    </main>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
