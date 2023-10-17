@@ -24,7 +24,7 @@
 
 @layer utilities {
   .nav-link.active {
-    @apply flex-col gap-0 px-0;
+    @apply flex-col gap-0 px-0 py-4;
   }
 
   .nav-link.active span {
@@ -33,5 +33,9 @@
 
   .nav-container.active {
     @apply border-none px-1 py-0;
+  }
+
+  .nav-container.active.first {
+    @apply pt-1;
   }
 }
