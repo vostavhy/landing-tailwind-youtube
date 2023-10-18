@@ -6,7 +6,7 @@ const toggleNav = () => {
 
   const sidebar = document.querySelector("aside");
 
-  const navContainer = document.querySelectorAll(".nav-container");
+  const navContainer = document.querySelectorAll("nav");
   const navLinks = document.querySelectorAll(".nav-link");
 
   burger.addEventListener("click", () => {

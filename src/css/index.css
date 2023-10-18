@@ -15,6 +15,10 @@
     @apply w-[72px];
   }
 
+  nav.active {
+    @apply border-none px-1 py-0;
+  }
+
   nav.active:first-child {
     @apply pt-1;
   }
@@ -33,9 +37,5 @@
 
   .nav-link.active span {
     @apply text-[10px] leading-[14px];
-  }
-
-  .nav-container.active {
-    @apply border-none px-1 py-0;
   }
 }
