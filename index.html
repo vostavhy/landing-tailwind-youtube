@@ -11,7 +11,7 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="flex items-center">
+    <header class="fixed left-0 right-0 flex items-center bg-white">
       <!-- logo -->
       <div class="flex w-full max-w-[240px] items-center pl-4">
         <button id="burger" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5">
@@ -54,9 +54,9 @@
       </button>
     </header>
 
-    <main class="flex">
+    <main class="flex pt-14">
       <!-- aside -->
-      <aside>
+      <aside class="fixed left-0 top-14 h-full hover:overflow-auto">
         <!-- nav 1 -->
         <nav class="border-b border-black/10 p-3 pr-6">
           <ul>
@@ -204,7 +204,49 @@
       </aside>
 
       <!-- content -->
-      <section class="pl-5">CONTENT</section>
+      <section class="content w-full">
+        <!-- tabs -->
+        <div class="container relative pt-5">
+          <div class="flex gap-3 overflow-hidden">
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">All</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Live</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Music</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">
+              Chill-out music
+            </button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">News</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">
+              Background music
+            </button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Gaming</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Driving</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">
+              Game shows
+            </button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">News</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">
+              Background music
+            </button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Gaming</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Driving</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">
+              Game shows
+            </button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">News</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">
+              Background music
+            </button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Gaming</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">Driving</button>
+            <button class="shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10">
+              Game shows
+            </button>
+          </div>
+          <button class="bg-gradient absolute right-0 top-2.5 flex h-full w-[106px] items-center justify-end">
+            <img src="icons/content/right-arrow.svg" alt="right" />
+          </button>
+        </div>
+      </section>
     </main>
     <script type="module" src="src/js/main.js"></script>
   </body>

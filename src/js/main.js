@@ -9,11 +9,15 @@ const toggleNav = () => {
   const navContainer = document.querySelectorAll("nav");
   const navLinks = document.querySelectorAll(".nav-link");
 
+  const content = document.querySelector(".content");
+
   burger.addEventListener("click", () => {
     hiddenNav.forEach((nav) => nav.classList.toggle("hidden"));
     sidebar.classList.toggle("active");
     navContainer.forEach((nav) => nav.classList.toggle("active"));
     navLinks.forEach((link) => link.classList.toggle("active"));
+
+    content.classList.toggle("active");
   });
 };
 

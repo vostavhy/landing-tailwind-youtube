@@ -26,7 +26,15 @@
 
 @layer components {
   .container {
-    @apply mx-auto max-w-[1680px] px-6;
+    @apply max-w-[1680px];
+  }
+
+  .content {
+    @apply pl-[256px];
+  }
+
+  .content.active {
+    @apply pl-[88px];
   }
 }
 

@@ -42,6 +42,9 @@ export default {
         "slide-in": "slide-in 0.5s ease-in-out",
         "slide-out": "slide-out 0.5s ease-in-out",
       },
+      backgroundImage: {
+        gradient: "linear-gradient(270deg, #FFF 20%, rgba(255, 255, 255, 0.00) 80%)",
+      },
     },
     plugins: [],
   },
