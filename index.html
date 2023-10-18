@@ -11,9 +11,9 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header>
+    <header class="flex items-center">
       <!-- logo -->
-      <div class="flex items-center pl-4">
+      <div class="flex w-full max-w-[240px] items-center pl-4">
         <button id="burger" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5">
           <img src="icons/nav.svg" alt="navigation" />
         </button>
@@ -21,6 +21,37 @@
           <img src="images/logo.png" alt="logo" />
         </a>
       </div>
+
+      <form action="#" class="flex w-full max-w-[600px] pl-4">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search"
+          class="w-full rounded-l-[40px] border border-[#CCCCCC] py-[7px] pl-[17px] pr-1 shadow-[0_25px_1_25px_0_75px_#EEEEEE] outline-none focus:border-light-blue"
+        />
+        <button
+          type="submit"
+          class="rounded-r-[40px] border border-l-0 border-black/10 bg-[#F8F8F8] px-5 py-2 hover:bg-black/5"
+        >
+          <img src="icons/header/search.svg" alt="search" />
+        </button>
+      </form>
+
+      <button class="ml-4 flex-shrink-0 rounded-full bg-[#F8F8F8] p-2 hover:bg-black/5">
+        <img src="icons/header/microphone.svg" alt="microphone" />
+      </button>
+
+      <button class="ml-[78px] flex-shrink-0 rounded-full bg-[#F8F8F8] p-2 hover:bg-black/5">
+        <img src="icons/header/dotes.svg" alt="microphone" />
+      </button>
+
+      <button
+        class="ml-2 flex w-max items-center gap-[6px] rounded-[18px] border border-black/10 py-[6px] pl-[10px] pr-4 transition hover:bg-black/5"
+      >
+        <img src="icons/aside/login.svg" alt="login" class="" />
+        <span class="font-medium text-light-blue">Sign in</span>
+      </button>
     </header>
 
     <main class="flex">
@@ -173,7 +204,7 @@
       </aside>
 
       <!-- content -->
-      <section>CONTENT</section>
+      <section class="pl-5">CONTENT</section>
     </main>
     <script type="module" src="src/js/main.js"></script>
   </body>
