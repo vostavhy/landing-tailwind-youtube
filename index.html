@@ -11,7 +11,7 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="fixed left-0 right-0 flex items-center bg-white">
+    <header class="fixed left-0 right-0 flex items-center bg-white lg:pr-4">
       <!-- logo -->
       <div class="flex w-full max-w-[240px] items-center pl-4">
         <button id="burger" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5">
@@ -22,7 +22,8 @@
         </a>
       </div>
 
-      <form action="#" class="flex w-full max-w-[600px] pl-4">
+      <!-- Desktop Search -->
+      <form action="#" id="desktop-search" class="flex w-full max-w-[600px] pl-4 sm:hidden">
         <input
           type="search"
           name="search"
@@ -38,19 +39,52 @@
         </button>
       </form>
 
-      <button class="ml-4 flex-shrink-0 rounded-full bg-[#F8F8F8] p-2 hover:bg-black/5">
+      <!-- Open Search -->
+      <button
+        id="open-search"
+        type="submit"
+        class="ml-auto hidden rounded-full border border-black/10 bg-[#F8F8F8] px-4 py-[6px] sm:block"
+      >
+        <img src="icons/header/search.svg" alt="search" />
+      </button>
+
+      <!-- Mobile Search -->
+      <div id="mobile-search" class="absolute bottom-0 left-0 right-0 top-0 hidden bg-secondary/10">
+        <form action="#" class="flex w-full max-w-[600px] p-2">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search"
+            class="w-full rounded-l-[40px] border border-[#CCCCCC] py-[7px] pl-[17px] pr-1 shadow-[0_25px_1_25px_0_75px_#EEEEEE] outline-none focus:border-light-blue"
+          />
+          <button
+            type="submit"
+            class="rounded-r-[40px] border border-l-0 border-black/10 bg-[#F8F8F8] px-5 py-2 hover:bg-black/5"
+          >
+            <img src="icons/header/search.svg" alt="search" />
+          </button>
+          <button id="close-search" class="ml-4 flex-shrink-0 rounded-full bg-white px-4 py-2 hover:bg-black/5">
+            X
+          </button>
+        </form>
+      </div>
+
+      <!-- Microphone -->
+      <button class="ml-4 flex-shrink-0 rounded-full bg-[#F8F8F8] p-2 hover:bg-black/5 sm:hidden">
         <img src="icons/header/microphone.svg" alt="microphone" />
       </button>
 
-      <button class="ml-[78px] flex-shrink-0 rounded-full bg-[#F8F8F8] p-2 hover:bg-black/5">
-        <img src="icons/header/dotes.svg" alt="microphone" />
+      <!-- Dotes -->
+      <button class="ml-[78px] flex-shrink-0 rounded-full bg-[#F8F8F8] p-2 hover:bg-black/5 sm:hidden">
+        <img src="icons/header/dotes.svg" alt="dotes" />
       </button>
 
+      <!-- Login -->
       <button
-        class="ml-2 flex w-max items-center gap-[6px] rounded-[18px] border border-black/10 py-[6px] pl-[10px] pr-4 transition hover:bg-black/5"
+        class="ml-2 flex w-max shrink-0 items-center gap-[6px] rounded-[18px] border border-black/10 px-4 py-[6px] transition hover:bg-black/5"
       >
         <img src="icons/aside/login.svg" alt="login" class="" />
-        <span class="font-medium text-light-blue">Sign in</span>
+        <span class="font-medium text-light-blue sm:hidden">Sign in</span>
       </button>
     </header>
 

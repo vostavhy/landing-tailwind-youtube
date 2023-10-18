@@ -21,4 +21,22 @@ const toggleNav = () => {
   });
 };
 
+const toggleMobileSearch = () => {
+  const openSearchButton = document.querySelector("#open-search");
+  const mobileSearchContainer = document.querySelector("#mobile-search");
+  const desktopSearchContainer = document.querySelector("#desktop-search");
+  const closeSearchButton = document.querySelector("#close-search");
+
+  openSearchButton.addEventListener("click", () => {
+    mobileSearchContainer.classList.toggle("hidden");
+    openSearchButton.classList.toggle("sm:hidden");
+  });
+
+  closeSearchButton.addEventListener("click", () => {
+    mobileSearchContainer.classList.toggle("hidden");
+    openSearchButton.classList.toggle("sm:hidden");
+  });
+};
+
 toggleNav();
+toggleMobileSearch();
