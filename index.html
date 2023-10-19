@@ -14,7 +14,7 @@
     <header class="fixed left-0 right-0 flex items-center bg-white lg:pr-4">
       <!-- logo -->
       <div class="flex w-full max-w-[240px] items-center pl-4">
-        <button id="burger" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5">
+        <button id="burger" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5 sm:hidden">
           <img src="icons/nav.svg" alt="navigation" />
         </button>
         <a href="#" class="flex items-center justify-center">
@@ -90,7 +90,7 @@
 
     <main class="flex pt-14">
       <!-- aside -->
-      <aside class="fixed left-0 top-14 h-full hover:overflow-auto">
+      <aside class="fixed left-0 top-14 h-full hover:overflow-auto sm:hidden">
         <!-- nav 1 -->
         <nav class="border-b border-black/10 p-3 pr-6">
           <ul>
@@ -276,12 +276,29 @@
               Game shows
             </button>
           </div>
-          <button class="bg-gradient absolute right-0 top-2.5 flex h-full w-[106px] items-center justify-end">
+          <button class="absolute right-0 top-2.5 flex h-full w-[106px] items-center justify-end bg-gradient">
             <img src="icons/content/right-arrow.svg" alt="right" />
           </button>
         </div>
       </section>
     </main>
+    <footer class="fixed bottom-0 left-0 right-0 hidden h-10 justify-between bg-black/10 sm:flex">
+      <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2">
+        <img src="icons/aside/home.svg" alt="home" />
+      </a>
+      <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2">
+        <img src="icons/aside/shorts.svg" alt="shorts" />
+      </a>
+      <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2">
+        <img src="icons/aside/subscriptions.svg" alt="subscriptions" />
+      </a>
+      <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2">
+        <img src="icons/aside/library.svg" alt="library" />
+      </a>
+      <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2">
+        <img src="icons/aside/history.svg" alt="history" />
+      </a>
+    </footer>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

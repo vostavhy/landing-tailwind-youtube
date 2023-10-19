@@ -30,7 +30,7 @@
   }
 
   .content {
-    @apply pl-[256px];
+    @apply pl-[256px] sm:pl-7;
   }
 
   .content.active {
