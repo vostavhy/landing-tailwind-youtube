@@ -28,11 +28,13 @@ const toggleMobileSearch = () => {
 
   openSearchButton.addEventListener("click", () => {
     mobileSearchContainer.classList.toggle("hidden");
+    mobileSearchContainer.classList.toggle("flex");
     openSearchButton.classList.toggle("sm:hidden");
   });
 
   closeSearchButton.addEventListener("click", () => {
     mobileSearchContainer.classList.toggle("hidden");
+    mobileSearchContainer.classList.toggle("flex");
     openSearchButton.classList.toggle("sm:hidden");
   });
 };

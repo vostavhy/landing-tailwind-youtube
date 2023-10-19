@@ -11,7 +11,7 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="fixed left-0 right-0 flex items-center bg-white lg:pr-4">
+    <header class="fixed left-0 right-0 z-10 flex items-center bg-white lg:pr-4">
       <!-- logo -->
       <div class="flex w-full max-w-[240px] items-center pl-4">
         <button id="burger" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5 sm:hidden">
@@ -63,7 +63,11 @@
           >
             <img src="icons/header/search.svg" alt="search" />
           </button>
-          <button id="close-search" class="ml-4 flex-shrink-0 rounded-full bg-white px-4 py-2 hover:bg-black/5">
+          <button
+            id="close-search"
+            type="reset"
+            class="ml-4 flex-shrink-0 rounded-full bg-white px-4 py-2 hover:bg-black/5"
+          >
             X
           </button>
         </form>
@@ -238,9 +242,9 @@
       </aside>
 
       <!-- content -->
-      <section class="content w-full">
+      <section class="content container pr-4">
         <!-- tabs -->
-        <div class="container relative pt-5">
+        <div class="relative pt-5">
           <div class="flex gap-3 overflow-hidden">
             <button class="category-btn active">All</button>
             <button class="category-btn">Live</button>
@@ -266,9 +270,470 @@
             <img src="icons/content/right-arrow.svg" alt="right" />
           </button>
         </div>
+
+        <!-- videos -->
+        <div class="border-b-[4px] border-black/10 pb-10 pr-4 pt-9">
+          <!-- video row -->
+          <div class="grid grid-cols-5 gap-4 gap-y-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <!-- video item advert-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-1.jpg" alt="video" class="w-full" />
+                  <span
+                    class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                    >0:31</span
+                  >
+                </a>
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="#" class="h-max w-max flex-shrink-0">
+                  <img src="images/videos/channel-1.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <div>
+                    <span class="text-base font-medium leading-[22px] text-primary"
+                      >The new McCormick® Snaptight TM bottle keeps flavor fresh, an…</span
+                    >
+                    <div class="mt-1 flex w-full items-center gap-1">
+                      <span class="text-xs font-bold leading-3 text-primary">Ad ·</span>
+                      <span class="text-sm text-secondary">McCormick Spice</span>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- dotes button-->
+                <button
+                  class="relative -right-[15px] -top-[5px] flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full hover:bg-black/5"
+                >
+                  <img src="icons/header/dotes.svg" alt="dotes" />
+                </button>
+              </div>
+            </div>
+
+            <!-- video item live-->
+            <div>
+              <!-- video poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-2.jpg" alt="video" class="w-full" />
+                </a>
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-2.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >lofi hip hop radio 📚 - beats to relax/study to</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">Lofi Girl</span>
+                    <img src="icons/content/confirm.svg" alt="" />
+                  </div>
+                  <span class="text-sm text-secondary">20K watching</span>
+                  <div class="flex w-max items-center gap-[6px] bg-dark-red px-1">
+                    <img src="icons/content/live.svg" alt="" />
+                    <span class="text-xs font-medium leading-3 text-white">LIVE</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item normal 1-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-3.jpg" alt="video" class="w-full" />
+                </a>
+                <span class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                  >5:32</span
+                >
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-3.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >Car break-in victim tracks stolen camera and gear to SF, gets…</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">ABC7 News Bay Area</span>
+                    <img src="icons/content/confirm.svg" alt="" />
+                  </div>
+                  <span class="text-sm text-secondary">425K views • 16 hours ago</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item normal 2-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-4.jpg" alt="video" class="w-full" />
+                </a>
+                <span class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                  >18:21</span
+                >
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-4.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >Sommelier Tries 10 Tequilas From $20-$175 | Bon Appétit</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">Bon Appétit</span>
+                    <img src="icons/content/confirm.svg" alt="" />
+                  </div>
+                  <span class="text-sm text-secondary">341K views • 3 days ago</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item normal 3-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-5.jpg" alt="video" class="w-full" />
+                </a>
+                <span class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                  >3:07:09</span
+                >
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-5.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >🅽🅴🆆 The Beverly Hillbillies 2023🌲 SS1 Ep30 Duke Becomes a Fath…</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">Edu MAGO</span>
+                  </div>
+                  <span class="text-sm text-secondary">787 views • 20 hours ago</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item live-->
+            <div>
+              <!-- video poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-2.jpg" alt="video" class="w-full" />
+                </a>
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-2.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >lofi hip hop radio 📚 - beats to relax/study to</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">Lofi Girl</span>
+                    <img src="icons/content/confirm.svg" alt="" />
+                  </div>
+                  <span class="text-sm text-secondary">20K watching</span>
+                  <div class="flex w-max items-center gap-[6px] bg-dark-red px-1">
+                    <img src="icons/content/live.svg" alt="" />
+                    <span class="text-xs font-medium leading-3 text-white">LIVE</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item normal 1-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-3.jpg" alt="video" class="w-full" />
+                </a>
+                <span class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                  >5:32</span
+                >
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-3.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >Car break-in victim tracks stolen camera and gear to SF, gets…</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">ABC7 News Bay Area</span>
+                    <img src="icons/content/confirm.svg" alt="" />
+                  </div>
+                  <span class="text-sm text-secondary">425K views • 16 hours ago</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item normal 2-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-4.jpg" alt="video" class="w-full" />
+                </a>
+                <span class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                  >18:21</span
+                >
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-4.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >Sommelier Tries 10 Tequilas From $20-$175 | Bon Appétit</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">Bon Appétit</span>
+                    <img src="icons/content/confirm.svg" alt="" />
+                  </div>
+                  <span class="text-sm text-secondary">341K views • 3 days ago</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item normal 3-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-5.jpg" alt="video" class="w-full" />
+                </a>
+                <span class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                  >3:07:09</span
+                >
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-5.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >🅽🅴🆆 The Beverly Hillbillies 2023🌲 SS1 Ep30 Duke Becomes a Fath…</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">Edu MAGO</span>
+                  </div>
+                  <span class="text-sm text-secondary">787 views • 20 hours ago</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- video item normal 1-->
+            <div>
+              <!-- video poster -->
+              <div class="relative overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/videos/video-3.jpg" alt="video" class="w-full" />
+                </a>
+                <span class="absolute bottom-1 right-1 rounded-[4px] bg-black/80 px-2 py-1 text-xs leading-3 text-white"
+                  >5:32</span
+                >
+              </div>
+              <!-- video info -->
+              <div class="mt-3 flex">
+                <!-- channel avatar -->
+                <a href="/channel" class="h-max w-max flex-shrink-0 overflow-hidden rounded-full">
+                  <img src="images/videos/channel-3.jpg" alt="avatar" />
+                </a>
+
+                <!-- video details -->
+                <a href="#" class="ml-3">
+                  <span class="text-base font-medium leading-[22px] text-primary"
+                    >Car break-in victim tracks stolen camera and gear to SF, gets…</span
+                  >
+                  <div class="mt-1 flex w-full items-center gap-1">
+                    <span class="text-sm text-secondary">ABC7 News Bay Area</span>
+                    <img src="icons/content/confirm.svg" alt="" />
+                  </div>
+                  <span class="text-sm text-secondary">425K views • 16 hours ago</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- shorts -->
+        <div class="py-6">
+          <div class="flex items-center gap-[2px]">
+            <img src="icons/content/shorts.svg" alt="img" />
+            <h3 class="text-xl text-primary">Shorts</h3>
+          </div>
+
+          <!-- shorts row -->
+          <div class="sm:gri grid grid-cols-7 gap-4 pt-6 lg:grid-cols-4">
+            <!-- short item 1-->
+            <div>
+              <!-- short poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/shorts/short-1.jpg" alt="video" class="h-auto w-full" />
+                </a>
+              </div>
+              <!-- short details -->
+              <a href="#">
+                <h3 class="pt-[14px] text-base font-medium leading-[22px] text-primary">Adorable 🥰🥰</h3>
+                <p class="mt-[3px] text-sm text-secondary">1.3M views</p>
+              </a>
+            </div>
+            <!-- short item 2-->
+            <div>
+              <!-- short poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/shorts/short-2.jpg" alt="video" class="h-auto w-full" />
+                </a>
+              </div>
+              <!-- short details -->
+              <div class="mt-[14px]">
+                <a href="#">
+                  <h3 class="text-base font-medium leading-[22px] text-primary">Proof that cats are liquid ❤ 😂</h3>
+                  <p class="mt-[3px] text-sm text-secondary">23M views</p>
+                </a>
+              </div>
+            </div>
+            <!-- short item 3-->
+            <div>
+              <!-- short poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/shorts/short-3.jpg" alt="video" class="h-auto w-full" />
+                </a>
+              </div>
+              <!-- short details -->
+              <div class="mt-[14px]">
+                <a href="#">
+                  <h3 class="text-base font-medium leading-[22px] text-primary">THIS 7U QUARTERBACK IS INSANE!😳🎯</h3>
+                  <p class="mt-[3px] text-sm text-secondary">7.4M views</p>
+                </a>
+              </div>
+            </div>
+            <!-- short item 4-->
+            <div>
+              <!-- short poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/shorts/short-4.jpg" alt="video" class="h-auto w-full" />
+                </a>
+              </div>
+              <!-- short details -->
+              <div class="mt-[14px]">
+                <a href="#">
+                  <h3 class="text-base font-medium leading-[22px] text-primary">Shopping be like</h3>
+                  <p class="mt-[3px] text-sm text-secondary">2.2M views</p>
+                </a>
+              </div>
+            </div>
+            <!-- short item 5-->
+            <div>
+              <!-- short poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/shorts/short-5.jpg" alt="video" class="h-auto w-full" />
+                </a>
+              </div>
+              <!-- short details -->
+              <div class="mt-[14px]">
+                <a href="#">
+                  <h3 class="text-base font-medium leading-[22px] text-primary">$100,000,000 Car Doors</h3>
+                  <p class="mt-[3px] text-sm text-secondary">36M views</p>
+                </a>
+              </div>
+            </div>
+            <!-- short item 6-->
+            <div>
+              <!-- short poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/shorts/short-6.jpg" alt="video" class="h-auto w-full" />
+                </a>
+              </div>
+              <!-- short details -->
+              <div class="mt-[14px]">
+                <a href="#">
+                  <h3 class="text-base font-medium leading-[22px] text-primary">
+                    He tried to wrestle with Kai Cenat😂😂
+                  </h3>
+                  <p class="mt-[3px] text-sm text-secondary">13M views</p>
+                </a>
+              </div>
+            </div>
+            <!-- short item 7-->
+            <div>
+              <!-- short poster -->
+              <div class="overflow-hidden rounded-xl">
+                <a href="#">
+                  <img src="images/shorts/short-7.jpg" alt="video" class="h-auto w-full" />
+                </a>
+              </div>
+              <!-- short details -->
+              <div class="mt-[14px]">
+                <a href="#">
+                  <h3 class="text-base font-medium leading-[22px] text-primary">
+                    Funny Little Puppy Gets Angry at His Own Hiccups
+                  </h3>
+                  <p class="mt-[3px] text-sm text-secondary">4.2M views</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="fixed bottom-0 left-0 right-0 hidden h-10 justify-between bg-black/10 sm:flex">
+    <footer class="fixed bottom-0 left-0 right-0 z-10 hidden h-10 justify-between bg-gray-300 sm:flex">
       <a href="#" class="nav-link group flex items-center gap-6 rounded-[10px] px-3 py-2">
         <img src="icons/aside/home.svg" alt="home" />
       </a>
