@@ -37,5 +37,17 @@ const toggleMobileSearch = () => {
   });
 };
 
+const changeActiveCategoryBtn = () => {
+  const categoryButtons = document.querySelectorAll(".category-btn");
+
+  categoryButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      categoryButtons.forEach((btn) => btn.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  });
+};
+
 toggleNav();
 toggleMobileSearch();
+changeActiveCategoryBtn();

@@ -46,4 +46,12 @@
   .nav-link.active span {
     @apply text-[10px] leading-[14px];
   }
+
+  .category-btn {
+    @apply shrink-0 rounded-lg bg-black/5 px-3 py-[6px] text-primary hover:bg-black/10;
+  }
+
+  .category-btn.active {
+    @apply bg-primary text-white;
+  }
 }
