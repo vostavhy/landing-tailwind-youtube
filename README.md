@@ -1,8 +1,4 @@
-# Default README.
-
-# TODO: Before final deployment change links and delete this comment.
-
-# landing-tailwind-
+# landing-tailwind-youtube
 
 ## Landing for the following figma layout:
 
@@ -12,7 +8,7 @@ Landing page is responsive and has a mobile version.
 
 ## Deployment available here:
 
-https://vostavhy.github.io/landing-tailwind-skills/
+https://vostavhy.github.io/landing-tailwind-youtube/
 
 ## Technologies used:
 
@@ -28,7 +24,7 @@ In the project directory, you can run:
 ### `yarn dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:5173/landing-tailwind-skills/](http://localhost:5173/landing-tailwind-skills/) to view it in your browser.
+Open [http://localhost:5173/landing-tailwind-youtube/](http://localhost:5173/landing-tailwind-youtube/) to view it in your browser.
 
 The page will reload when you make changes.
 
@@ -42,4 +38,4 @@ Your app is ready to be deployed!
 ### `yarn preview`
 
 Runs the compiled bundle from the `dist` folder in the production mode.\
-Open [http://localhost:4173/landing-tailwind-skills/](http://localhost:4173/landing-tailwind-skills/) to view it in your browser.
+Open [http://localhost:4173/landing-tailwind-youtube/](http://localhost:4173/landing-tailwind-youtube/) to view it in your browser.
